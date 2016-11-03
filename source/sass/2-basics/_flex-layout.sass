@@ -1,0 +1,40 @@
+// * FLEX CLASSES FOR LAYOUT *
+
+//Declare as flex
+.flex
+	display: flex
+	//Enable wrap?
+	&.-wrap
+		flex-wrap: wrap
+	// ** DIRECTION OF CONTENT
+	&.-row
+	flex-direction: row
+	&.-col
+	flex-direction: column
+	// ** ALIGNMENT OF CONTENT
+
+	// center, center
+	&.-center
+		justify-content: center
+		align-items: center
+	// center-x axis only
+	&.-center-x
+		justify-content: center
+	// center-y axis only
+	&.-center-y
+		align-items: center
+	// Equal padding of elements (excluding sides)
+	&.-between	
+		justify-content: space-between
+	// Equal padding of elements (including sides)
+	&.-around	
+		justify-content: space-around
+	// Align to left
+	&.-start 
+		justify-content: flex-start
+	// Align to right
+	&.-end 
+		justify-content: flex-end
+
+
+// Note: Always experiment, you might discover something new :)

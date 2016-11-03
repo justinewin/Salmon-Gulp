@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+head
+  title Salmon
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  link(rel="shortcut icon", href="favicon.ico")
+  link(rel="stylesheet", href="assets/css/main.css")
+
+  //- Fontawesome - remove this if not needed
+
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+
+body
+  nav
+    ul
+      li Salmon
+      li 
+        a(href="https://github.com/JustineWin/Salmon-Gulp" class="fork-btn" target="_blank") Fork Me  
+          i.fa.fa-code-fork 
+
+  .container.flex.-center
+    .col-sm-7
+      h1 Salmon Boilerplate
+      .flex.-center
+        img(src="/assets/img/Salmon.png", alt="")
+      p.-highlight.mt30 
+        | This boilerplate is 
+        a(href="https://github.com/JustineWin" target="_blank") Justine Win's 
+        | custom version of 
+        a(href="http://devtipsstarterkit.com/") Devtip's Starter Kit V2.
+      p Salmon uses 
+        em Jade (Pug)  
+        | and
+        em  Sass 
+        | and includes clean flex layout classes, optional bootstrap & skeleton grid, and what-not.
+        
+      h2 Grids
+      p Choose whether you want to use bootstrap's or skeleton's grid then go to  
+        em main.sass 
+        | file and comment out the grid's css file you will not use 
+      h2 Flex layout
+      p This page is using flex classes. I have included helpful comments on the  
+        em flex-layout.sass 
+        | file. Go ahead, experiment! 
+      h2 Getting started
+      p Fork or clone, do whatever you want. If you're not into Sass and Jade, you can use 
+        a(href="https://github.com/JustineWin/Salmon-Boilerplate" target="_blank") Salmon Boilerplate 
+        | - an HTML/CSS version of this.
+      h2 Other Notes
+      p We are currently using Jade. We're still figuring out how to configure our gulpfile to enable Pug. Thank you for your patience :)
+      
+    hr
+    .col-sm-7
+  script(src="./vendors/jquery/dist/jquery.min.js")
+  script(src="./assets/js/app.js")
